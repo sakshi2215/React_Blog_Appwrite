@@ -3,7 +3,6 @@ import  {Container, Logo, LogoutBtn} from '../Index'
 import {Link} from 'react-router-dom'
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import authService from "../../appwrite/auth";
 
 
 function Header(){

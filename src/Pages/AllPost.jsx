@@ -1,5 +1,5 @@
 import React,{useState, useEffect} from 'react'
-import  {service as apperiteService}  from "../appwrite/config"
+import  {Service as apperiteService}  from "../appwrite/config"
 import { Container, PostCard } from '../components/Index'
 function AllPost(){
 

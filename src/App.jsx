@@ -3,11 +3,12 @@ import './App.css'
 import {useDispatch} from 'react-redux'
 import authService from './appwrite/auth'
 import {login, logout} from "./store/authSlice"
-import {Header, Footer} from './components/index.js'
+import {Header, Footer} from './components/Index.js'
+import { Outlet } from 'react-router-dom'
 
 function App() {
   
-  const [ loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true)
   const dispatch = useDispatch();
 
   useEffect(()=>{
@@ -20,9 +21,6 @@ function App() {
         dispatch(logout())
       }
     })
-    .catch((error)=>
-    console.log(error)
-    )
     .finally(()=>setLoading(false))
   },[])
   
@@ -32,7 +30,7 @@ function App() {
       <div className='w-full block'>
         <Header/>
         <main>
-        Todo: {/* {Outlet} Handle*/} 
+        Todo:  <Outlet />
         </main>
         <Footer/>
       </div>
