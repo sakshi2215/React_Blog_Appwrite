@@ -7,6 +7,9 @@ import Button from './Button.jsx'
 import Input from "./Input.jsx"
 import RTE from "./RTE.jsx"
 import PostForm from "./Post-form/PostForm.jsx"
+import Signup from "./Signup.jsx"
+import Login from "./Login.jsx"
+import PostCard from "./PostCard.jsx"
 export {
     Header,
     Footer,
@@ -16,5 +19,8 @@ export {
     Button,
     Input,
     RTE,
-    PostForm
+    PostForm,
+    Signup,
+    Login,
+    PostCard
 }
