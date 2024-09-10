@@ -8,6 +8,7 @@ export default function RTE({name, control, label,
     defaultValue=""
 }){
     return(
+    
      <div className="w-full">
         {label && <label className="text-sm text-grey-600">
             {label}
@@ -18,6 +19,7 @@ export default function RTE({name, control, label,
         render= {
             ({field:{onChange}})=>(
                 <Editor
+                apiKey='sr7ixcel2o2otiazyrdm20taoewa6ugyx9b3n9tlbunufnpk'
                 initialValue={defaultValue}
                 init = {{
                     height:500,

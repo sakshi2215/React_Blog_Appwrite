@@ -6,12 +6,13 @@ import { Provider } from 'react-redux'
 import store from './store/store.js'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Home from './Pages/Home.jsx'
-import { AuthLayout, Login } from './components/Index.js'
+import { AuthLayout} from './components/Index.js'
 import AddPost from "./Pages/AddPost";
 import Signup from './Pages/Signup'
 import EditPost from "./Pages/EditPost";
 import Post from "./Pages/Post";
 import AllPost from "./Pages/AllPost";
+import Login from "./Pages/Login.jsx"
 
 
 
