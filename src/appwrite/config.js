@@ -85,7 +85,7 @@ export class Service{
             )
         }
         catch(error){
-            console.log("Appwrite service:: getPost::error", error); 
+            console.log("Appwrite service:: getPosts::error", error); 
             return false;
         }
     }
@@ -136,4 +136,4 @@ export class Service{
 
 
 const service = new Service();
-export default Service;
+export default service;
